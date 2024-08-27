@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aim Training</title>
+    <link rel="stylesheet" href="aim.css">
+    <script src="aim.js" defer></script>
+</head>
+<body>
+    <div class="screen">
+        <h1>Aim Training</h1>
+        <p class="start" id="start">Start</p>
+    </div>
+    <div class="screen">
+        <h1>Select the level of difficulty:</h1>
+        <ul class="level-difficulty" id="level-difficulty">
+            <li><button class="level-button easy">Easy</button></li>
+            <li><button class="level-button medium">Medium</button></li>
+            <li><button class="level-button hard">Hard</button></li>
+            <li><button class="level-button very">Very Hard</button></li>
+        </ul>
+    </div>
+    <div class="screen">
+        <h3>Left <span id="time">00:30</span></h3>
+        <div class="board" id="board"></div>
+        <h3 class="hide" id="again">Start again</h3>
+        <h3 class="hide" id="home">Home</h3>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Khula&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: "Khula", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+  user-select: none;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    transition: margin 0.5s ease-out;
+    background: linear-gradient(90deg, #29323c 0%, #485563 100%);
+}
+  
+.screen.up {
+    margin-top: -100vh;
+}
+
+.screen h1 {
+    font-size: 4rem;
+}
+
+.screen p {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.start:hover {
+    color: #16d9e3;
+    cursor: pointer;
+}
+
+.level-difficulty {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.level-button {
+    margin: 10px;
+    background: none;
+    width: 150px;
+    height: 60px;
+    font-size: 24px;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.board {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(90deg,#485563 0%, #29323c 0%);
+    border-radius: 25px;
+    box-shadow: -8px -8px 20px #2a333d, 10px 7px 20px #475462;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.finish h1{
+    margin-top: 84;
+    margin-bottom: 10;
+}
+
+.circle {
+    background: linear-gradient(90deg, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#again, #home{
+    margin-bottom: 0;
+}
+
+#again:hover, #home:hover {
+    color: #16d9e3;
+    cursor: pointer;
+}
+
+.hide {
+    opacity: 0;
+    cursor: default !important;
+}
+
+.primary{
+    color: #16d9e3
+}
+
+.easy:hover {
+    border: 2px solid #1fd30e;
+    color: #1fd30e;
+}
+
+.medium:hover {
+    border: 2px solid #c2b013;
+    color: #c2b013;
+}
+
+.hard:hover {
+    border: 2px solid #d11212;
+    color: #d11212;
+}
+
+.very:hover {
+    border: 2px solid #400677;
+    color: #400677;
+}
+
